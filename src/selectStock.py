@@ -1,6 +1,7 @@
 import sys, os
 import pandas
 import argparse
+from StockSymbols import symbol_nifty500
 
 class selectStocks():
     ''' Stock Selection Strategies'''
@@ -74,4 +75,6 @@ def run():
             print("".join(f"{s:10} "for s in stock))
 
 if __name__ == "__main__":
+    symbol_nifty500()
+    exit(0)
     sys.exit(run())
